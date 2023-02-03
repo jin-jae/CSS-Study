@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        html {
+            border:1px solid gray;
+        }
+        div {
+            border:5px solid tomato;
+            margin:10px;
+        }
+        #me {
+            position: relative;
+            left:100px;
+            right:100px;
+            /*If left consists, right are ignored.*/
+            top:100px;
+            bottom:100px;
+            /*If top consists, bottom are ignored.*/
+        }
+    </style>
+</head>
+<body>
+    <div id="other">other</div>
+    <div id="parent">
+        parent
+        <div id="me">me</div>
+    </div>
+</body>
+</html>
